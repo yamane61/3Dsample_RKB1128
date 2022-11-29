@@ -43,7 +43,6 @@ model-viewer#reveal {
 "auto-rotate"は自動的に回転表示。
 poster="hoge.png"は、3Dが読み込まれるまで、画像のhoge.pngを表示する設定-->
 <model-viewer min-field-of-view="1deg" max-camera-orbit="auto 90deg auto" camera-controls poster="hoge.gif" src="02.glb"  exposure="1"></model-viewer>
-
   
 <p></p>
 ↓パターン3
@@ -63,5 +62,25 @@ model-viewer#reveal {
 "auto-rotate"は自動的に回転表示。
 poster="hoge.png"は、3Dが読み込まれるまで、画像のhoge.pngを表示する設定-->
 <model-viewer min-field-of-view="1deg" max-camera-orbit="auto 90deg auto" camera-controls poster="hoge.gif" src="03.glb"  exposure="1"></model-viewer>
+  
+<p></p>
+↓パターン4
+<style>
+model-viewer {
+  width: 1280px;
+  height:720px;
+  background-color: 000000;
+}
+model-viewer#reveal {
+    --poster-color: transparent;
+}
+</style>
+
+<!-- 3Dモデルを読み込む。
+"exposure"は露出の制御、明るさが変わる。
+"auto-rotate"は自動的に回転表示。
+poster="hoge.png"は、3Dが読み込まれるまで、画像のhoge.pngを表示する設定-->
+<model-viewer min-field-of-view="1deg" max-camera-orbit="auto 90deg auto" camera-controls poster="hoge.gif" src="04.glb"  exposure="1"></model-viewer>
+  
 </body>
 </html>
